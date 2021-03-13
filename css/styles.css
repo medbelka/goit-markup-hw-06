@@ -502,7 +502,7 @@ button {
 }
 
 .whatwedopic {
-  width: calc(100% / 3 - var(--set-gap30));
+  width: calc(100% - var(--set-gap30)/ 3);
   margin-right: var(--set-gap30);
   display: block;
   position: relative;
