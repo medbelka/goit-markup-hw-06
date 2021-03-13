@@ -91,10 +91,16 @@
                                 <textarea class="form-input comments-field" name="comments" id="comments" cols="30" rows="5" placeholder="Введите текст"></textarea>
                             </div>
                             <form class="form">
-                                <div class="form-field agreement">
-                                    <input type="checkbox" name="agreement" id="agreement" />
-                                    <label for="username" class="form-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="link-agreement">Условия договора</a></label>
-                                </div>
+                                <label class="label-agreement">
+                                    <input type="checkbox" name="agreement" class="checkbox" value="agreement" />
+                                    <span class="check-icon">
+                                        <svg width="18" height="18">
+                                            <use href="./img/icons/icons.svg#icon-checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    Соглашаюсь с рассылкой и принимаю
+                                    <a href="#" class="link-agreement">Условия договора</a>
+                                </label>
                             </form>
                             <button type="submit" class="newsletter-submit modal-submit">Отправить</button>
                         </div>
@@ -445,11 +451,13 @@
                     <strong class="footer-join">подпишитесь на рассылку</strong>
                     <form class="newsletter">
                         <input type="email" class="newsletter-input" name="user-email" placeholder="E-mail">
-                        <button type="submit" class="newsletter-submit">Подписаться
-                            <svg width="24" height="24">
-                                <use href="./img/icons/icons.svg#icon-send "></use>
-                            </svg>
-                        </button>
+                        <div class="newsletter-container">
+                            <button type="submit" class="newsletter-submit">Подписаться
+                                <svg width="24" height="24">
+                                    <use href="./img/icons/icons.svg#icon-send "></use>
+                                </svg>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
