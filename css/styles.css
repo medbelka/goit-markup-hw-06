@@ -257,6 +257,7 @@ button {
   min-height: 501px;
   min-width: 448px;
   padding: 40px;
+  display: inline-grid;
 
   /* max-height: 100vh;
   overflow-y: auto; */
@@ -373,8 +374,6 @@ button {
 
 
 .modal-submit {
-  left: 50%;
-  transform: translateX(-50%);
   margin-left: auto;
   margin-right: auto;
   padding: 10px 56px;
@@ -502,7 +501,7 @@ button {
 }
 
 .whatwedopic {
-  width: calc(100% - var(--set-gap30)/ 3);
+  width: calc(100% - var(--set-gap30) / 3);
   margin-right: var(--set-gap30);
   display: block;
   position: relative;
@@ -806,8 +805,11 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  padding: 10px 62px 10px 29px;
   color: #ffffff;
+}
+
+.newsletter-container > .newsletter-submit {
+  padding: 10px 64px 10px 29px;
 }
 
 .newsletter-submit svg {
